@@ -2,15 +2,41 @@
 
 This is a queue imlementation for JavaScript (and CoffeeScript) with a convenient API that avoids use of the expensive ([`O(n)`](http://stackoverflow.com/a/11535121)) `Array.shift()` operation.
 
-## API
+## Including
 
 ### Node (CoffeeScript)
-
-Include the component.
 
 ```CoffeeScript
 Queue = require 'queue'
 ```
+
+### Node (JavaScript)
+
+```JavaScript
+var Queue = require('queue');
+```
+
+### Browser (via `<script>` tag)
+
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+	...
+</head>
+<body>
+	...
+	<script src="queue.js"></script>
+	<script>
+		// Queue is now a global variable
+	</script>
+</body>
+</html>
+```
+
+## Usage
+
+### CoffeeScript
 
 Create a new queue.
 
@@ -44,13 +70,7 @@ while q.length() > 0
 	console.log q.dequeue() # "hello", "world"
 ```
 
-### Node (JavaScript)
-
-Include the component.
-
-```JavaScript
-var Queue = require('queue');
-```
+### JavaScript
 
 Create a new queue.
 
