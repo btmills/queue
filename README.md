@@ -1,6 +1,6 @@
 # JavaScript queue
 
-This is a queue imlementation for JavaScript (and CoffeeScript) with a convenient API that avoids use of the expensive (`O(n)`) `Array.shift()` operation.
+This is a queue imlementation for JavaScript (and CoffeeScript) with a convenient API that avoids use of the expensive ([`O(n)`](http://stackoverflow.com/a/11535121)) `Array.shift()` operation.
 
 ## API
 
