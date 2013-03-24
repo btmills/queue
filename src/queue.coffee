@@ -5,6 +5,7 @@
 
 	'use strict'
 
+	# Based on http://tomswitzer.net/2011/02/super-simple-javascript-queue/
 	Queue = ->
 
 		first = 0
