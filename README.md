@@ -1,0 +1,1 @@
+# JavaScript queue data structure
