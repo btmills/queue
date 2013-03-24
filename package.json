@@ -17,6 +17,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
+    "coffee-script": "*",
     "mocha": "*"
   }
 }
