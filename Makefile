@@ -8,6 +8,10 @@ watch:
 
 clean:
 	rm lib/queue.js
+	rm test/test.*.js
 
 test: queue
 	mocha --reporter spec --compilers coffee:coffee-script test/test.node.coffee
+	coffee -bc test/test.browser.script.coffee
+	open test/test.browser.script.html
+

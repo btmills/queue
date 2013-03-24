@@ -1,7 +1,13 @@
-# Module patch based on http://www.2ality.com/2011/11/module-gap.html
-({ define: if typeof define == 'function' then define \
- 		else (A, F) -> module.exports = F.apply(null, A.map(require))
-}).define [], ->
+# Universal module definition supports node, AMD, script global
+# from https://github.com/umdjs/umd/blob/master/returnExports.js
+((root, factory) ->
+	if typeof exports == 'object'
+		module.exports = factory()
+	else if typeof define == 'function' and define.amd
+		define factory
+	else
+		root.Queue = factory()
+) this, ->
 
 	'use strict'
 
