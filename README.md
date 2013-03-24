@@ -107,7 +107,6 @@ while (q.length() > 0) {
 
 ## What's next?
 
-- Support client-side inclusion via script tag
 - Document client-side use with require.js/AMD
 
 ## License
