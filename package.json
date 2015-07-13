@@ -1,23 +1,29 @@
 {
-  "name": "queue",
-  "version": "0.0.1",
-  "description": "JavaScript queue data structure",
-  "main": "lib/queue.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "make test"
+  "name": "o1queue",
+  "version": "0.0.0",
+  "description": "Queue data structure",
+  "license": "MIT",
+  "author": {
+    "name": "Brandon Mills",
+    "url": "(https://github.com/btmills)"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/btmills/queue.git"
   },
-  "author": "Brandon Mills",
-  "license": "MIT",
-  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/btmills/queue/issues"
+  },
+  "homepage": "https://github.com/btmills/queue#readme",
+  "keywords": [
+    "queue"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "lib/queue.js",
   "devDependencies": {
-    "coffee-script": "*",
-    "mocha": "*"
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
   }
 }
