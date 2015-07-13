@@ -19,11 +19,12 @@
     "queue"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "eslint . && mocha"
   },
   "main": "lib/queue.js",
   "devDependencies": {
     "chai": "^3.0.0",
+    "eslint": "^0.24.1",
     "mocha": "^2.2.5"
   }
 }

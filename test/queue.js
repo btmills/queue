@@ -8,7 +8,7 @@ describe('Queue', function () {
 		it('should result in an empty queue', function () {
 			var q = new Queue();
 			assert.equal(q.length, 0);
-			assert.strictEqual(q.peek(), undefined);
+			assert.strictEqual(q.peek(), void 0);
 		});
 
 	});
@@ -50,7 +50,7 @@ describe('Queue', function () {
 
 		it('should return undefined if the queue is empty', function () {
 			var q = new Queue();
-			assert.strictEqual(q.dequeue(), undefined);
+			assert.strictEqual(q.dequeue(), void 0);
 		});
 
 	});
@@ -77,7 +77,7 @@ describe('Queue', function () {
 
 		it('should return undefined if the queue is empty', function () {
 			var q = new Queue();
-			assert.strictEqual(q.dequeue(), undefined);
+			assert.strictEqual(q.dequeue(), void 0);
 		});
 
 	});
