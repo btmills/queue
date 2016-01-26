@@ -1,16 +1,13 @@
 {
-  "name": "queue",
+  "name": "@btmills/queue",
   "version": "0.0.0",
-  "description": "Queue data structure",
+  "description": "A performant queue data structure.",
   "license": "MIT",
   "author": {
     "name": "Brandon Mills",
-    "url": "(https://github.com/btmills)"
+    "url": "https://github.com/btmills"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/btmills/queue.git"
-  },
+  "repository": "btmills/queue",
   "bugs": {
     "url": "https://github.com/btmills/queue/issues"
   },
@@ -22,9 +19,13 @@
     "test": "eslint . && mocha"
   },
   "main": "lib/queue.js",
+  "files": [
+    "lib/*.js"
+  ],
   "devDependencies": {
-    "chai": "^3.0.0",
-    "eslint": "^0.24.1",
-    "mocha": "^2.2.5"
+    "@btmills/eslint-config-btmills": "^0.1.2",
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "mocha": "^2.4.1"
   }
 }
