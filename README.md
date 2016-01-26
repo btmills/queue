@@ -5,7 +5,7 @@ This is a queue implementation for JavaScript with a convenient API that avoids 
 ## Usage
 
 ```js
-var Queue = require('o1queue');
+var Queue = require('@btmills/queue');
 ```
 
 Create a new queue.
