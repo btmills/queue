@@ -1,6 +1,6 @@
 {
   "name": "@btmills/queue",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A performant queue data structure.",
   "license": "MIT",
   "author": {
