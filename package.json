@@ -16,7 +16,9 @@
     "queue"
   ],
   "scripts": {
-    "test": "eslint . && mocha"
+    "lint": "eslint .",
+    "mocha": "mocha --timeout 4000",
+    "test": "npm run lint && npm run mocha"
   },
   "main": "lib/queue.js",
   "files": [
