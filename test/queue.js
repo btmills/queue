@@ -1,6 +1,7 @@
 'use strict';
 
 var assert = require('chai').assert;
+var iterate = require('leakage').iteration;
 var Queue = require('../lib/queue');
 
 describe('Queue', function () {
@@ -110,4 +111,16 @@ describe('Queue', function () {
 
 	});
 
+	it('does not leak memory', function (done) {
+        var q = new Queue();
+
+        iterate(1000, function () {
+            var count = Math.floor(Math.random() * 1000);
+
+            while (q.length < count) q.enqueue(Math.random());
+            while (q.length > 0) q.dequeue();
+        });
+
+        done();
+    });
 });
