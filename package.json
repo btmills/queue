@@ -16,7 +16,9 @@
     "queue"
   ],
   "scripts": {
-    "test": "eslint . && mocha"
+    "lint": "eslint .",
+    "mocha": "mocha --timeout 4000",
+    "test": "npm run lint && npm run mocha"
   },
   "main": "lib/queue.js",
   "files": [
@@ -26,6 +28,7 @@
     "@btmills/eslint-config-btmills": "^3.0.0-beta.3",
     "chai": "^3.4.1",
     "eslint": "^3.12.2",
+    "leakage": "^0.2.0",
     "mocha": "^2.4.1"
   }
 }
